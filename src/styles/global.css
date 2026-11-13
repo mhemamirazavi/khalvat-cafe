@@ -1,0 +1,73 @@
+/* ===== Khalvat Cafe — Global CSS (Vite module, imported in main.tsx) ===== */
+
+/* ---------- Font Definitions ---------- */
+@font-face {
+    font-family: 'RooyinRegular';
+    src: url('/fonts/RooyinFree-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RooyinBold';
+    src: url('/fonts/RooyinFree-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Generic alias kept for older styles that ask for plain 'Rooyin'. */
+@font-face {
+    font-family: 'Rooyin';
+    src: url('/fonts/RooyinFree-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rooyin';
+    src: url('/fonts/RooyinFree-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------- Khalvat Cafe Theme Variables ---------- */
+:root {
+    /* Brand colours */
+    --color-espresso:   #180e0b;
+    --color-dark-wood:  #25150f;
+    --color-amber-glow: #f09d38;
+    --color-soft-cream: #f6e9d7;
+
+    /* Typography */
+    --font-rooyin: 'RooyinRegular', 'Rooyin', Arial, Helvetica, sans-serif;
+}
+
+/* ---------- RTL Base ---------- */
+html {
+    direction: rtl;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #000000;
+    font-family: var(--font-rooyin);
+}
+
+/* ---------- App Root ---------- */
+#root,
+#app {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
